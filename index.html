@@ -1,137 +1,192 @@
       <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>أبطال الكورة</title>
+  <meta charset="UTF-8">
+  <title>أبطال الكورة</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      margin:0;
+      font-family: Tahoma, Arial;
+      background:#f2f4f7;
+    }
+    header{
+      background:linear-gradient(90deg,#0f2027,#203a43,#2c5364);
+      color:white;
+      text-align:center;
+      padding:30px 10px;
+    }
+    header h1{margin:0}
+    header p{margin-top:10px;font-size:14px}
 
-<style>
-body {
-    font-family: Tahoma, Arial;
-    background: #eef1f4;
-    margin: 0;
-    direction: rtl;
-}
+    .container{
+      max-width:900px;
+      margin:20px auto;
+      padding:10px;
+    }
 
-header {
-    background: linear-gradient(90deg, #0d6efd, #198754);
-    color: white;
-    padding: 30px;
-    text-align: center;
-}
+    .card{
+      background:white;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,.1);
+      margin-bottom:25px;
+    }
 
-.container {
-    padding: 15px;
-}
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
 
-.card {
-    background: white;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
+    .card-content{
+      padding:18px;
+    }
 
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
+    .card-content h2{
+      margin:0 0 10px;
+      font-size:20px;
+      color:#222;
+    }
 
-.card-content {
-    padding: 15px;
-}
+    .card-content p{
+      color:#555;
+      line-height:1.8;
+      font-size:15px;
+    }
 
-.card h2 {
-    margin: 0 0 10px;
-    font-size: 20px;
-}
+    .btn{
+      display:inline-block;
+      margin-top:12px;
+      padding:8px 16px;
+      background:#1e88e5;
+      color:white;
+      text-decoration:none;
+      border-radius:6px;
+      font-size:14px;
+    }
 
-.card p {
-    font-size: 15px;
-    color: #444;
-}
-
-.card a {
-    display: inline-block;
-    margin-top: 10px;
-    background: #0d6efd;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-}
-
-.card a:hover {
-    background: #084298;
-}
-
-footer {
-    background: #ddd;
-    text-align: center;
-    padding: 12px;
-    font-size: 14px;
-}
-</style>
-
+    footer{
+      text-align:center;
+      padding:20px;
+      color:#777;
+      font-size:13px;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-<h1>⚽ أبطال الكورة</h1>
-<p>أخبار، مباريات، وتحليلات كرة القدم العربية والعالمية</p>
+  <h1>⚽ أبطال الكورة</h1>
+  <p>موقع عربي يهتم بأخبار كرة القدم، التحليلات، المباريات والانتقالات</p>
 </header>
 
 <div class="container">
 
+<!-- 1 -->
 <div class="card">
-<img src="https://source.unsplash.com/600x400/?football,match">
+<img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg">
 <div class="card-content">
-<h2>🔥 مباريات اليوم</h2>
-<p>تعرف على مواعيد مباريات اليوم والقنوات الناقلة.</p>
-<a href="matches-today.html">اقرأ المزيد</a>
+<h2>🔥 مباريات اليوم والقنوات الناقلة</h2>
+<p>تعرف على جدول مباريات اليوم في الدوريات الأوروبية والعربية، مع توقيت المباريات والقنوات الناقلة لكل لقاء.</p>
+<a class="btn" href="#">اقرأ المزيد</a>
 </div>
 </div>
 
+<!-- 2 -->
 <div class="card">
-<img src="https://source.unsplash.com/600x400/?football,news">
+<img src="https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg">
 <div class="card-content">
-<h2>🏆 أخبار الكرة العالمية</h2>
-<p>آخر أخبار الدوريات الأوروبية لحظة بلحظة.</p>
-<a href="#">قريباً</a>
+<h2>🏆 آخر أخبار الكرة العالمية</h2>
+<p>متابعة شاملة لأخبار الدوري الإنجليزي، الإسباني، الإيطالي ودوري أبطال أوروبا.</p>
+<a class="btn" href="#">اقرأ المزيد</a>
 </div>
 </div>
 
+<!-- 3 -->
 <div class="card">
-<img src="https://source.unsplash.com/600x400/?soccer,arab">
+<img src="https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg">
 <div class="card-content">
 <h2>🇸🇦 أخبار الكرة العربية</h2>
-<p>متابعة شاملة للدوريات العربية والخليجية.</p>
-<a href="#">قريباً</a>
+<p>أخبار الدوري السعودي، المغربي، المصري وبقية الدوريات العربية لحظة بلحظة.</p>
+<a class="btn" href="#">اقرأ المزيد</a>
 </div>
 </div>
 
+<!-- 4 -->
 <div class="card">
-<img src="https://source.unsplash.com/600x400/?football,transfer">
+<img src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg">
 <div class="card-content">
 <h2>💰 سوق الانتقالات</h2>
-<p>أهم الصفقات وأخبار الانتقالات.</p>
-<a href="#">قريباً</a>
+<p>آخر الصفقات الرسمية، الشائعات، وتحركات الأندية في الميركاتو الصيفي والشتوي.</p>
+<a class="btn" href="#">اقرأ المزيد</a>
 </div>
 </div>
 
+<!-- 5 -->
 <div class="card">
-<img src="https://source.unsplash.com/600x400/?football,stadium">
+<img src="https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg">
 <div class="card-content">
-<h2>🏟️ البطولات الكبرى</h2>
-<p>دوري الأبطال، كأس العالم، والبطولات الكبرى.</p>
-<a href="#">قريباً</a>
+<h2>⭐ نجوم تحت المجهر</h2>
+<p>تحليل أداء أبرز اللاعبين العالميين والعرب وتأثيرهم على فرقهم.</p>
+<a class="btn" href="#">اقرأ المزيد</a>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="card">
+<img src="https://images.pexels.com/photos/61143/pexels-photo-61143.jpeg">
+<div class="card-content">
+<h2>📊 تحليلات فنية للمباريات</h2>
+<p>تحليل خططي لأهم المباريات مع قراءة فنية لأداء الفرق والمدربين.</p>
+<a class="btn" href="#">اقرأ المزيد</a>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="card">
+<img src="https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg">
+<div class="card-content">
+<h2>🧤 أفضل حراس المرمى</h2>
+<p>تعرف على أفضل حراس المرمى في العالم العربي وأوروبا هذا الموسم.</p>
+<a class="btn" href="#">اقرأ المزيد</a>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="card">
+<img src="https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg">
+<div class="card-content">
+<h2>⚽ تاريخ البطولات الكبرى</h2>
+<p>نظرة على تاريخ كأس العالم، دوري الأبطال وأهم اللحظات الكروية.</p>
+<a class="btn" href="#">اقرأ المزيد</a>
+</div>
+</div>
+
+<!-- 9 -->
+<div class="card">
+<img src="https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg">
+<div class="card-content">
+<h2>📺 مواعيد المباريات القادمة</h2>
+<p>جدول المباريات القادمة للأندية والمنتخبات مع التوقيت المحلي.</p>
+<a class="btn" href="#">اقرأ المزيد</a>
+</div>
+</div>
+
+<!-- 10 -->
+<div class="card">
+<img src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg">
+<div class="card-content">
+<h2>🔥 توقعات ونتائج المباريات</h2>
+<p>توقعات وتحليلات قبل المباريات ونتائج اللقاءات بعد نهايتها.</p>
+<a class="btn" href="#">اقرأ المزيد</a>
 </div>
 </div>
 
 </div>
 
 <footer>
-© 2026 موقع أبطال الكورة
+© 2026 – موقع أبطال الكورة
 </footer>
 
 </body>
