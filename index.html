@@ -7,15 +7,15 @@
 <style>
 body {
     font-family: Tahoma, Arial;
-    background: #f2f4f7;
+    background: #eef1f4;
     margin: 0;
     direction: rtl;
 }
 
 header {
-    background: linear-gradient(90deg, #0d6efd, #000);
+    background: linear-gradient(90deg, #0d6efd, #198754);
     color: white;
-    padding: 25px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -25,10 +25,20 @@ header {
 
 .card {
     background: white;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
 }
 
 .card h2 {
@@ -44,16 +54,15 @@ header {
 .card a {
     display: inline-block;
     margin-top: 10px;
-    background: #198754;
+    background: #0d6efd;
     color: white;
-    padding: 8px 14px;
+    padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
-    font-size: 14px;
 }
 
 .card a:hover {
-    background: #146c43;
+    background: #084298;
 }
 
 footer {
@@ -69,69 +78,54 @@ footer {
 
 <header>
 <h1>⚽ أبطال الكورة</h1>
-<p>موقع عربي يهتم بأخبار كرة القدم يومياً</p>
+<p>أخبار، مباريات، وتحليلات كرة القدم العربية والعالمية</p>
 </header>
 
 <div class="container">
 
 <div class="card">
+<img src="https://source.unsplash.com/600x400/?football,match">
+<div class="card-content">
 <h2>🔥 مباريات اليوم</h2>
-<p>تعرف على أهم مباريات اليوم والتوقيت والقنوات الناقلة.</p>
+<p>تعرف على مواعيد مباريات اليوم والقنوات الناقلة.</p>
 <a href="matches-today.html">اقرأ المزيد</a>
+</div>
 </div>
 
 <div class="card">
+<img src="https://source.unsplash.com/600x400/?football,news">
+<div class="card-content">
 <h2>🏆 أخبار الكرة العالمية</h2>
 <p>آخر أخبار الدوريات الأوروبية لحظة بلحظة.</p>
 <a href="#">قريباً</a>
 </div>
+</div>
 
 <div class="card">
+<img src="https://source.unsplash.com/600x400/?soccer,arab">
+<div class="card-content">
 <h2>🇸🇦 أخبار الكرة العربية</h2>
-<p>متابعة شاملة لأخبار الكرة العربية والخليجية.</p>
+<p>متابعة شاملة للدوريات العربية والخليجية.</p>
 <a href="#">قريباً</a>
+</div>
 </div>
 
 <div class="card">
+<img src="https://source.unsplash.com/600x400/?football,transfer">
+<div class="card-content">
 <h2>💰 سوق الانتقالات</h2>
-<p>أحدث صفقات اللاعبين وأخبار الانتقالات الصيفية.</p>
+<p>أهم الصفقات وأخبار الانتقالات.</p>
 <a href="#">قريباً</a>
+</div>
 </div>
 
 <div class="card">
-<h2>⭐ نجوم كرة القدم</h2>
-<p>أخبار وتحليلات عن نجوم الكرة العالمية.</p>
+<img src="https://source.unsplash.com/600x400/?football,stadium">
+<div class="card-content">
+<h2>🏟️ البطولات الكبرى</h2>
+<p>دوري الأبطال، كأس العالم، والبطولات الكبرى.</p>
 <a href="#">قريباً</a>
 </div>
-
-<div class="card">
-<h2>📊 ترتيب الدوريات</h2>
-<p>ترتيب الفرق في مختلف البطولات العالمية.</p>
-<a href="#">قريباً</a>
-</div>
-
-<div class="card">
-<h2>🎥 ملخصات المباريات</h2>
-<p>أهم اللقطات وملخصات المباريات.</p>
-<a href="#">قريباً</a>
-</div>
-
-<div class="card">
-<h2>📅 جدول المباريات</h2>
-<p>جدول مباريات الأسبوع في مختلف البطولات.</p>
-<a href="#">قريباً</a>
-</div>
-
-<div class="card">
-<h2>⚽ توقعات وتحليلات</h2>
-<p>تحليلات فنية وتوقعات المباريات.</p>
-<a href="#">قريباً</a>
-</div>
-
-<div class="card">
-<h2>🏟️ بطولات عالمية</h2>
-<p>متابعة خاصة لدوري الأبطال وكأس العالم.</p>
-<a href="#">قريباً</a>
 </div>
 
 </div>
@@ -142,5 +136,3 @@ footer {
 
 </body>
 </html>
-
-
