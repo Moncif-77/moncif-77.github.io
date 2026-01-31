@@ -1,213 +1,167 @@
-     <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>أبطال الكورة – سوق الانتقالات</title>
+<title>حاسبة القرارات الذكية</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="موقع يساعد الشباب والبنات على اتخاذ القرارات الصحيحة في الحب والعمل والحياة.">
+
 <style>
 body{
   margin:0;
   font-family:Tahoma,Arial;
-  background:#f2f4f7;
+  background:#f5f7fb;
+  color:#333;
 }
 header{
-  background:linear-gradient(90deg,#0f2027,#203a43,#2c5364);
+  background:linear-gradient(90deg,#667eea,#764ba2);
   color:white;
+  padding:40px 15px;
   text-align:center;
-  padding:30px 10px;
 }
+header h1{margin:0;font-size:28px;}
+header p{margin-top:10px;font-size:15px;}
+
+nav{
+  background:white;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:12px;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+nav a{
+  text-decoration:none;
+  color:#667eea;
+  font-weight:bold;
+}
+
 .container{
-  max-width:900px;
-  margin:20px auto;
-  padding:10px;
+  max-width:1000px;
+  margin:30px auto;
+  padding:15px;
 }
+
+.section-title{
+  font-size:22px;
+  margin-bottom:20px;
+  color:#444;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
 .card{
   background:white;
-  border-radius:12px;
-  overflow:hidden;
-  box-shadow:0 4px 10px rgba(0,0,0,.1);
-  margin-bottom:25px;
+  border-radius:15px;
+  padding:20px;
+  box-shadow:0 6px 15px rgba(0,0,0,.1);
 }
-.card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
+.card h3{
+  margin-top:0;
+  color:#764ba2;
 }
-.card-content{
-  padding:18px;
-}
-.card-content h2{
-  margin:0 0 10px;
-  font-size:20px;
-}
-.card-content p{
-  color:#555;
+.card p{
   line-height:1.8;
+  font-size:15px;
 }
-summary.btn{
+.card a{
   display:inline-block;
   margin-top:10px;
-  padding:8px 16px;
-  background:#1e88e5;
+  text-decoration:none;
+  background:#667eea;
   color:white;
-  border-radius:6px;
-  cursor:pointer;
-  list-style:none;
+  padding:8px 15px;
+  border-radius:8px;
+  font-size:14px;
 }
-summary::-webkit-details-marker{display:none;}
+
 footer{
+  background:#222;
+  color:#ccc;
+  padding:30px 15px;
+  margin-top:40px;
+}
+footer .links{
   text-align:center;
-  padding:20px;
-  color:#777;
+  margin-bottom:10px;
+}
+footer a{
+  color:#ccc;
+  margin:0 10px;
+  text-decoration:none;
+  font-size:14px;
+}
+footer p{
+  text-align:center;
   font-size:13px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>⚽ أبطال الكورة</h1>
-<p>سوق الانتقالات – آخر الصفقات والشائعات</p>
+<h1>🧠 حاسبة القرارات الذكية</h1>
+<p>موقع يساعد الشباب والبنات على اتخاذ القرار الصحيح</p>
 </header>
+
+<nav>
+<a href="#tools">الأدوات</a>
+<a href="#topics">مواضيع</a>
+<a href="decision.html">حاسبة القرار</a>
+</nav>
 
 <div class="container">
 
-<!-- 1 -->
-<div class="card">
-<img src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg">
-<div class="card-content">
-<h2>🔥 انتقال مبابي – آخر المستجدات</h2>
-<p>تطورات جديدة حول مستقبل كيليان مبابي.</p>
-<details>
-<summary class="btn">اقرأ المزيد</summary>
-<p>تتنافس عدة أندية أوروبية كبيرة لحسم صفقة مبابي، مع مفاوضات متقدمة قد تُحسم قريباً.</p>
-</details>
-</div>
-</div>
-
-<!-- 2 -->
-<div class="card">
-<img src="https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg">
-<div class="card-content">
-<h2>💰 ريال مدريد يقترب من صفقة جديدة</h2>
-<p>تحركات قوية في ميركاتو ريال مدريد.</p>
-<details>
-<summary class="btn">اقرأ المزيد</summary>
-<p>الإدارة تسعى لتعزيز خط الوسط بلاعب شاب بصفقة قد تتجاوز 70 مليون يورو.</p>
-</details>
-</div>
+<h2 class="section-title" id="tools">🛠️ أدوات ذكية</h2>
+<div class="cards">
+  <div class="card">
+    <h3>❤️ قرار الحب</h3>
+    <p>هل تستمر في العلاقة أم تنسحب؟ أجب عن أسئلة بسيطة واحصل على توجيه منطقي.</p>
+    <a href="smart-decision.html">ابدأ الآن</a>
+  </div>
+  <div class="card">
+    <h3>💼 قرار العمل</h3>
+    <p>هل الوقت مناسب لتغيير عملك؟ هذه الأداة تساعدك على التفكير بهدوء.</p>
+    <a href="smart-decision.html">ابدأ الآن</a>
+  </div>
+  <div class="card">
+    <h3>🎓 قرار الدراسة</h3>
+    <p>هل تكمل دراستك أم تبحث عن بديل؟ أداة مبنية على أسئلة عملية.</p>
+    <a href="smart-decision.html">ابدأ الآن</a>
+  </div>
 </div>
 
-<!-- 3 -->
-<div class="card">
-<img src="https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg">
-<div class="card-content">
-<h2>🇸🇦 صفقة نارية في الدوري السعودي</h2>
-<p>نجم أوروبي يقترب من الانتقال للخليج.</p>
-<details>
-<summary class="btn">اقرأ المزيد</summary>
-<p>العرض المالي الضخم قد يحسم الصفقة خلال أيام، مع موافقة مبدئية من اللاعب.</p>
-</details>
-</div>
-</div>
-
-<!-- 4 -->
-<div class="card">
-<img src="https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg">
-<div class="card-content">
-<h2>🔄 برشلونة وسوق الانتقالات</h2>
-<p>بيع لاعب من أجل تمويل الصفقات.</p>
-<details>
-<summary class="btn">اقرأ المزيد</summary>
-<p>برشلونة يدرس بيع أحد نجومه لتخفيف الأزمة المالية والتعاقد مع بديل.</p>
-</details>
-</div>
-</div>
-
-<!-- 5 -->
-<div class="card">
-<img src="https://images.pexels.com/photos/61143/pexels-photo-61143.jpeg">
-<div class="card-content">
-<h2>🧤 انتقال حارس مرمى مفاجئ</h2>
-<p>نادي كبير يبحث عن بديل سريع.</p>
-<details>
-<summary class="btn">اقرأ المزيد</summary>
-<p>الإصابات المتكررة دفعت النادي للتحرك العاجل في الميركاتو الشتوي.</p>
-</details>
-</div>
-</div>
-
-<!-- 6 -->
-<div class="card">
-<img src="https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg">
-<div class="card-content">
-<h2>⭐ نجم شاب يغيّر وجهته</h2>
-<p>قرار مفاجئ في الساعات الأخيرة.</p>
-<details>
-<summary class="btn">اقرأ المزيد</summary>
-<p>اللاعب رفض عرضاً أوروبياً وفضّل مشروعاً رياضياً طويل المدى.</p>
-</details>
-</div>
-</div>
-
-<!-- 7 -->
-<div class="card">
-<img src="https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg">
-<div class="card-content">
-<h2>📊 صفقات الدوري الإنجليزي</h2>
-<p>ميركاتو مشتعل في البريميرليغ.</p>
-<details>
-<summary class="btn">اقرأ المزيد</summary>
-<p>عدة أندية أبرمت صفقات قوية لتعزيز حظوظها في المنافسة هذا الموسم.</p>
-</details>
-</div>
-</div>
-
-<!-- 8 -->
-<div class="card">
-<img src="https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg">
-<div class="card-content">
-<h2>🇲🇦 لاعب مغربي يقترب من أوروبا</h2>
-<p>اهتمام متزايد من أندية كبرى.</p>
-<details>
-<summary class="btn">اقرأ المزيد</summary>
-<p>مفاوضات جارية وقد تُعلن الصفقة رسمياً خلال الأسبوع القادم.</p>
-</details>
-</div>
-</div>
-
-<!-- 9 -->
-<div class="card">
-<img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg">
-<div class="card-content">
-<h2>⚠️ صفقة فشلت في اللحظات الأخيرة</h2>
-<p>اختلاف حول الشروط المالية.</p>
-<details>
-<summary class="btn">اقرأ المزيد</summary>
-<p>فشل الاتفاق بسبب عمولة الوكيل، والنادي يبحث عن بديل سريع.</p>
-</details>
-</div>
-</div>
-
-<!-- 10 -->
-<div class="card">
-<img src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg">
-<div class="card-content">
-<h2>🔥 أقوى صفقات الموسم حتى الآن</h2>
-<p>تقييم شامل لأهم الانتقالات.</p>
-<details>
-<summary class="btn">اقرأ المزيد</summary>
-<p>نستعرض أغلى الصفقات وأكثرها تأثيراً على مستوى الأندية هذا الموسم.</p>
-</details>
-</div>
+<h2 class="section-title" id="topics">📚 مواضيع تهمك</h2>
+<div class="cards">
+  <div class="card">
+    <h3>كيف تتخذ قراراً دون ندم؟</h3>
+    <p>أغلب الناس تندم ليس بسبب القرار، بل بسبب التسرع. تعلم كيف تفكر بهدوء.</p>
+  </div>
+  <div class="card">
+    <h3>علامات القرار الخاطئ</h3>
+    <p>هناك إشارات نفسية تظهر قبل اتخاذ أي قرار خاطئ، انتبه لها.</p>
+  </div>
+  <div class="card">
+    <h3>العاطفة أم العقل؟</h3>
+    <p>متى تستمع لقلبك؟ ومتى يجب أن تحكم عقلك؟ التوازن هو الحل.</p>
+  </div>
 </div>
 
 </div>
 
 <footer>
-© 2026 – موقع أبطال الكورة
+<div class="links">
+<a href="about.html">من نحن</a>
+<a href="privacy.html">سياسة الخصوصية</a>
+<a href="contact.html">اتصل بنا</a>
+</div>
+<p>© 2026 – حاسبة القرارات الذكية</p>
 </footer>
 
 </body>
-</html> 
-
+</html>
