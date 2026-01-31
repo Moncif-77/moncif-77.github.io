@@ -3,101 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <title>حاسبة القرارات الذكية</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="موقع يساعد الشباب والبنات على اتخاذ القرارات الصحيحة في الحب والعمل والحياة.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="موقع عربي يساعد الشباب والبنات على اتخاذ قرارات ذكية في الحب، الزواج، الدراسة والهجرة.">
 
 <style>
 body{
   margin:0;
-  font-family:Tahoma,Arial;
-  background:#f5f7fb;
-  color:#333;
+  font-family:Tajawal, Arial;
+  background:#f4f6ff;
 }
 header{
   background:linear-gradient(90deg,#667eea,#764ba2);
-  color:white;
-  padding:40px 15px;
+  color:#fff;
+  padding:35px 15px;
   text-align:center;
 }
-header h1{margin:0;font-size:28px;}
-header p{margin-top:10px;font-size:15px;}
-
 nav{
-  background:white;
-  display:flex;
-  justify-content:center;
-  gap:20px;
+  background:#fff;
   padding:12px;
-  box-shadow:0 2px 6px rgba(0,0,0,.08);
+  text-align:center;
+  box-shadow:0 2px 6px rgba(0,0,0,.1);
 }
 nav a{
-  text-decoration:none;
+  margin:0 10px;
   color:#667eea;
+  text-decoration:none;
   font-weight:bold;
 }
-
 .container{
-  max-width:1000px;
-  margin:30px auto;
-  padding:15px;
-}
-
-.section-title{
-  font-size:22px;
-  margin-bottom:20px;
-  color:#444;
-}
-
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:white;
-  border-radius:15px;
   padding:20px;
-  box-shadow:0 6px 15px rgba(0,0,0,.1);
+  max-width:950px;
+  margin:auto;
 }
-.card h3{
-  margin-top:0;
-  color:#764ba2;
+.card{
+  background:#fff;
+  margin-bottom:25px;
+  padding:22px;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
-.card p{
-  line-height:1.8;
-  font-size:15px;
-}
-.card a{
-  display:inline-block;
-  margin-top:10px;
-  text-decoration:none;
+button{
   background:#667eea;
-  color:white;
-  padding:8px 15px;
+  color:#fff;
+  border:none;
+  padding:10px 22px;
   border-radius:8px;
-  font-size:14px;
+  cursor:pointer;
 }
-
-footer{
-  background:#222;
-  color:#ccc;
-  padding:30px 15px;
-  margin-top:40px;
-}
-footer .links{
-  text-align:center;
+select{
+  width:100%;
+  padding:10px;
   margin-bottom:10px;
 }
-footer a{
-  color:#ccc;
-  margin:0 10px;
-  text-decoration:none;
-  font-size:14px;
-}
-footer p{
+.result{margin-top:12px;font-weight:bold;}
+.page{display:none;}
+.page.active{display:block;}
+footer{
   text-align:center;
-  font-size:13px;
+  padding:20px;
+  color:#777;
 }
 </style>
 </head>
@@ -106,62 +70,144 @@ footer p{
 
 <header>
 <h1>🧠 حاسبة القرارات الذكية</h1>
-<p>موقع يساعد الشباب والبنات على اتخاذ القرار الصحيح</p>
+<p>أدوات ذكية + مقالات مفيدة للشباب</p>
 </header>
 
 <nav>
-<a href="#tools">الأدوات</a>
-<a href="#topics">مواضيع</a>
-<a href="decision.html">حاسبة القرار</a>
+<a href="#" onclick="openPage('home')">الرئيسية</a>
+<a href="#" onclick="openPage('tools')">الأدوات</a>
+<a href="#" onclick="openPage('articles')">المقالات</a>
+<a href="#" onclick="openPage('privacy')">الخصوصية</a>
 </nav>
 
 <div class="container">
 
-<h2 class="section-title" id="tools">🛠️ أدوات ذكية</h2>
-<div class="cards">
-  <div class="card">
-    <h3>❤️ قرار الحب</h3>
-    <p>هل تستمر في العلاقة أم تنسحب؟ أجب عن أسئلة بسيطة واحصل على توجيه منطقي.</p>
-    <a href="smart-decision.html">ابدأ الآن</a>
-  </div>
-  <div class="card">
-    <h3>💼 قرار العمل</h3>
-    <p>هل الوقت مناسب لتغيير عملك؟ هذه الأداة تساعدك على التفكير بهدوء.</p>
-    <a href="smart-decision.html">ابدأ الآن</a>
-  </div>
-  <div class="card">
-    <h3>🎓 قرار الدراسة</h3>
-    <p>هل تكمل دراستك أم تبحث عن بديل؟ أداة مبنية على أسئلة عملية.</p>
-    <a href="smart-decision.html">ابدأ الآن</a>
-  </div>
+<!-- الرئيسية -->
+<div id="home" class="page active">
+<div class="card">
+<h3>مرحبا بك</h3>
+<p>
+هذا الموقع يساعدك على اتخاذ قرارات صحيحة في حياتك
+باستعمال التحليل المنطقي.
+</p>
+</div>
 </div>
 
-<h2 class="section-title" id="topics">📚 مواضيع تهمك</h2>
-<div class="cards">
-  <div class="card">
-    <h3>كيف تتخذ قراراً دون ندم؟</h3>
-    <p>أغلب الناس تندم ليس بسبب القرار، بل بسبب التسرع. تعلم كيف تفكر بهدوء.</p>
-  </div>
-  <div class="card">
-    <h3>علامات القرار الخاطئ</h3>
-    <p>هناك إشارات نفسية تظهر قبل اتخاذ أي قرار خاطئ، انتبه لها.</p>
-  </div>
-  <div class="card">
-    <h3>العاطفة أم العقل؟</h3>
-    <p>متى تستمع لقلبك؟ ومتى يجب أن تحكم عقلك؟ التوازن هو الحل.</p>
-  </div>
+<!-- الأدوات -->
+<div id="tools" class="page">
+
+<div class="card">
+<h3>❤️ قرار الحب</h3>
+<select id="l1"><option value="0">راحة نفسية؟</option><option value="2">نعم</option><option value="-2">لا</option></select>
+<select id="l2"><option value="0">احترام متبادل؟</option><option value="2">نعم</option><option value="-2">لا</option></select>
+<button onclick="calcLove()">تحليل</button>
+<div id="loveRes" class="result"></div>
+</div>
+
+<div class="card">
+<h3>💍 قرار الزواج</h3>
+<select id="m1"><option value="0">استقرار مادي؟</option><option value="2">نعم</option><option value="-1">لا</option></select>
+<select id="m2"><option value="0">تفاهم فكري؟</option><option value="2">نعم</option><option value="-2">لا</option></select>
+<button onclick="calcMarriage()">تحليل</button>
+<div id="marRes" class="result"></div>
+</div>
+
+</div>
+
+<!-- المقالات (لائحة) -->
+<div id="articles" class="page">
+
+<div class="card">
+<h3>كيف تتخذ قرارًا صحيحًا؟</h3>
+<p>خطوات عملية لاتخاذ القرار بدون تسرع.</p>
+<button onclick="openArticle('a1')">اقرأ المزيد</button>
+</div>
+
+<div class="card">
+<h3>هل الحب وحده يكفي للزواج؟</h3>
+<p>الحب مهم، لكن ليس كافيًا دائمًا.</p>
+<button onclick="openArticle('a2')">اقرأ المزيد</button>
+</div>
+
+<div class="card">
+<h3>الدراسة أم العمل؟</h3>
+<p>كيف تختار المسار المناسب لك؟</p>
+<button onclick="openArticle('a3')">اقرأ المزيد</button>
+</div>
+
+</div>
+
+<!-- مقال 1 -->
+<div id="a1" class="page">
+<div class="card">
+<h2>كيف تتخذ قرارًا صحيحًا؟</h2>
+<p>
+اتخاذ القرار يحتاج هدوءًا وتحليلًا.
+ابدأ بتحديد المشكلة، ثم اجمع المعطيات،
+وقارن بين الإيجابيات والسلبيات.
+</p>
+<button onclick="openPage('articles')">⬅ رجوع</button>
+</div>
+</div>
+
+<!-- مقال 2 -->
+<div id="a2" class="page">
+<div class="card">
+<h2>هل الحب وحده يكفي للزواج؟</h2>
+<p>
+الحب عنصر أساسي، لكن الزواج يحتاج
+التفاهم، الاحترام، والاستقرار.
+</p>
+<button onclick="openPage('articles')">⬅ رجوع</button>
+</div>
+</div>
+
+<!-- مقال 3 -->
+<div id="a3" class="page">
+<div class="card">
+<h2>الدراسة أم العمل؟</h2>
+<p>
+الاختيار يعتمد على ظروفك وطموحاتك.
+بعض الناس ينجح بالدراسة، وآخرون بالعمل المبكر.
+</p>
+<button onclick="openPage('articles')">⬅ رجوع</button>
+</div>
+</div>
+
+<!-- الخصوصية -->
+<div id="privacy" class="page">
+<div class="card">
+<h3>سياسة الخصوصية</h3>
+<p>
+لا نقوم بجمع معلومات شخصية.
+قد نستخدم Google AdSense لعرض الإعلانات.
+</p>
+</div>
 </div>
 
 </div>
 
 <footer>
-<div class="links">
-<a href="about.html">من نحن</a>
-<a href="privacy.html">سياسة الخصوصية</a>
-<a href="contact.html">اتصل بنا</a>
-</div>
-<p>© 2026 – حاسبة القرارات الذكية</p>
+© 2026 حاسبة القرارات الذكية
 </footer>
+
+<script>
+function openPage(id){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+function openArticle(id){
+openPage(id);
+}
+function calcLove(){
+let s=parseInt(l1.value)+parseInt(l2.value);
+loveRes.innerText=s>=3?"✅ علاقة جيدة":s>=0?"⚠️ فكر أكثر":"❌ علاقة متعبة";
+}
+function calcMarriage(){
+let s=parseInt(m1.value)+parseInt(m2.value);
+marRes.innerText=s>=3?"✅ وقت مناسب":"⚠️ تحتاج استعداد":"❌ غير مناسب";
+}
+</script>
 
 </body>
 </html>
